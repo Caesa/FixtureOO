@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/btnProxpartido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:onClick="proxpartido"
+        android:text="@string/btnSiguiente" />
+
+    <EditText
+        android:id="@+id/txtPunteq1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lblEquipo1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:ems="10"
+        android:width="35dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/lblEquipo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnProxpartido"
+        android:layout_alignLeft="@+id/lblEquipo1"
+        android:layout_marginBottom="88dp"
+        android:text="TextView"
+        android:textSize="@dimen/nombreequipo" />
+
+    <TextView
+        android:id="@+id/lblEquipo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="90dp"
+        android:text="TextView"
+        android:textSize="@dimen/nombreequipo" />
+
+    <EditText
+        android:id="@+id/txtPunteq2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lblEquipo2"
+        android:layout_alignLeft="@+id/txtPunteq1"
+        android:ems="10"
+        android:width="35dp" />
+
+</RelativeLayout>
